@@ -65,6 +65,7 @@ h1 span {
     font-size: 3rem;
     font-weight: bold;
     -webkit-text-stroke: .001px black;
+    text-stroke: .001px black;
 }
 
 /* ===== NOTE TEXT ===== */
@@ -78,12 +79,14 @@ p span {
     color: red;
     font-weight: bolder;
 }
+
 /* ===== RESPNSIVE ===== */
-@media screen and (max-width: 992px){
-    h1{
+@media screen and (max-width: 992px) {
+    h1 {
         font-size: .8rem;
     }
-    h1 span{
+
+    h1 span {
         font-size: 2rem;
     }
 }
