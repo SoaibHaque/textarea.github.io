@@ -79,6 +79,12 @@ p span {
     color: red;
     font-weight: bolder;
 }
+form input.input_desktop{
+    display: block;
+}
+form input.input_phone{
+    display: none;
+}
 
 /* ===== RESPNSIVE ===== */
 @media screen and (max-width: 992px) {
@@ -88,5 +94,11 @@ p span {
 
     h1 span {
         font-size: 2rem;
+    }
+    form input.input_desktop{
+        display: none;
+    }
+    form input.input_phone{
+        display: block;
     }
 }
