@@ -16,8 +16,9 @@
 
     <!-- ===== FORM ===== -->
     <form action="http://api.whatsapp.com/send">
-        <input type="number" id="number" onfocus=" let value = this.value; this.value = null; this.value=value"
-            name="phone" value="91" placeholder="Type your Number" autocomplete="off">
+        <input pattern="[0-9]*" type="number" id="number"
+            onfocus=" let value = this.value; this.value = null; this.value=value" name="phone" value="91"
+            placeholder="Type your Number" autocomplete="off">
         <button>send</button>
     </form>
 

@@ -41,7 +41,13 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 button {
+    user-select: none;
+    -moz-user-select: none;
     flex: 1;
     background: yellow;
     font-weight: bold;
@@ -50,6 +56,8 @@ button {
 
 h1 {
     margin-top: 11rem;
+    user-select: none;
+    -moz-user-select: none;
 }
 
 h1 span {
@@ -62,6 +70,8 @@ h1 span {
 /* ===== NOTE TEXT ===== */
 p {
     font-weight: bold;
+    user-select: none;
+    -moz-user-select: none;
 }
 
 p span {
