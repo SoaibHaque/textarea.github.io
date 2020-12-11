@@ -11,15 +11,23 @@
 </head>
 
 <body>
+    <!-- ===== HEADING ===== -->
     <h1> <span>WhatsApp</span> Send without save</h1>
-    <form action="http://api.whatsapp.com/send" id="submit">
-        <input type="number" id="number" onfocus=" let value = this.value; this.value = null; this.value=value" name="phone" value="91" placeholder="Type your Number" autocomplete="off">
+
+    <!-- ===== FORM ===== -->
+    <form action="http://api.whatsapp.com/send">
+        <input type="number" id="number" onfocus=" let value = this.value; this.value = null; this.value=value"
+            name="phone" value="91" placeholder="Type your Number" autocomplete="off">
         <button>send</button>
     </form>
+
+    <!-- ===== NOTE TEXT ===== -->
     <p>(use <span>ENTER</span> to send)</p>
 </body>
+
+<!-- ===== JAVASCRIPT ===== -->
 <script type="text/javascript">
-document.getElementById("number").focus();
+    document.getElementById("number").focus();
 </script>
 
 </html>

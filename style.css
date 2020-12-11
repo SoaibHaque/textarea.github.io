@@ -1,3 +1,4 @@
+/* ===== RESET DEFULT ===== */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +11,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* ===== FORM ===== */
 form {
+    display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,7 +23,7 @@ form {
 
 }
 
- input,
+input,
 button {
     border: none;
     outline: none;
@@ -28,9 +31,21 @@ button {
     padding: 1rem 2rem;
 }
 
+input {
+    flex: 2;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 button {
+    flex: 1;
     background: yellow;
     font-weight: bold;
+    cursor: pointer;
 }
 
 h1 {
@@ -44,6 +59,7 @@ h1 span {
     -webkit-text-stroke: .001px black;
 }
 
+/* ===== NOTE TEXT ===== */
 p {
     font-weight: bold;
 }
@@ -51,13 +67,4 @@ p {
 p span {
     color: red;
     font-weight: bolder;
-}
-
-form span {
-    padding-left: 2rem;
-}
-
-input#code {
-    padding:0 0 0 1rem;
-    width: 2rem;
 }
