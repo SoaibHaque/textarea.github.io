@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>text area</title>
+    <title>WhatsApp send</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="whatsapp.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <h1> <span>WhatsApp</span> Send without save</h1>
-    <form action="http://api.whatsapp.com/send">
-        <input  name="phone" type="number" onclick="this.select()" placeholder="Type your Number">
+    <form action="http://api.whatsapp.com/send" id="submit">
+        <input type="number" id="number" onfocus=" let value = this.value; this.value = null; this.value=value" name="phone" value="91" placeholder="Type your Number" autocomplete="off">
         <button>send</button>
     </form>
     <p>(use <span>ENTER</span> to send)</p>
 </body>
+<script type="text/javascript">
+document.getElementById("number").focus();
+</script>
+
 </html>
