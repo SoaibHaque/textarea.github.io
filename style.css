@@ -4,6 +4,9 @@
 }
 body{
     background: greenyellow;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
 }
 form{
     position: absolute;
@@ -22,4 +25,21 @@ input,button{
 }
 button{
     background: yellow;
+    font-weight: bold;
+}
+h1{
+    margin-top: 11rem;
+}
+h1 span{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    -webkit-text-stroke: .001px black;
+}
+p{
+    font-weight: bold;
+}
+p span{
+    color: red;
+    font-weight: bolder;
 }

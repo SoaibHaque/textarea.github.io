@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>text area</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <h1> <span>WhatsApp</span> Send without save</h1>
     <form action="http://api.whatsapp.com/send">
-        <input  name="phone" type="number">
-        <button>submit</button>
+        <input  name="phone" type="number" onclick="this.select()" placeholder="Type your Number">
+        <button>send</button>
     </form>
+    <p>(use <span>ENTER</span> to send)</p>
 </body>
 </html>
