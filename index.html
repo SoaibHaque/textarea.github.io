@@ -11,17 +11,17 @@
 </head>
 
 <body>
-        <!-- ===== HEADING ===== -->
-        <h1> <span>WhatsApp</span> Send without save</h1>
-        
-        <!-- ===== FORM ===== -->
-        <form action="http://api.whatsapp.com/send">
-            <input type="number" id="number"
+    <!-- ===== HEADING ===== -->
+    <h1> <span>WhatsApp</span> Send without save</h1>
+
+    <!-- ===== FORM ===== -->
+    <form action="http://api.whatsapp.com/send">
+        <input type="number" inputmode="numeric" id="number"
             onfocus=" let value = this.value; this.value = null; this.value=value" name="phone" value="91"
             placeholder="Type your Number" autocomplete="off">
-            <button>send</button>
-        </form>
-        
+        <button>send</button>
+    </form>
+
     <!-- ===== NOTE TEXT ===== -->
     <p>(use <span>ENTER</span> to send)</p>
 </body>
