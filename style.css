@@ -2,30 +2,43 @@
 * {
     margin: 0;
     padding: 0;
+    transition: all .5s ease;
 }
 
 body {
-    background: greenyellow;
+    background: rgb(252, 191, 191);
     text-align: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
 }
 
 /* ===== FORM ===== */
-form {
+form,
+a,
+h2 {
     display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f2f2f2f2;
+    background-color: #fffffff2;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, .3);
+}
 
+h2 {
+    top: 70%;
+    background: none;
+    box-shadow: none;
+}
+
+a {
+    text-decoration: none;
+    top: 80%;
 }
 
 input,
 button {
-    border: none;
+    border: 2px solid transparent;
     outline: none;
     background: none;
     padding: 1rem 2rem;
@@ -46,12 +59,20 @@ input[type=number] {
 }
 
 button {
+    font-weight: 100;
+    color: white;
     user-select: none;
     -moz-user-select: none;
     flex: 1;
-    background: yellow;
+    background: rgb(243, 46, 73);
     font-weight: bold;
     cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid rgb(243, 46, 73);
+    background-color: rgb(252, 191, 191);
+    color: rgb(243, 46, 73);
 }
 
 h1 {
@@ -61,11 +82,10 @@ h1 {
 }
 
 h1 span {
-    color: white;
+    color: rgb(50, 190, 50);
     font-size: 3rem;
     font-weight: bold;
     -webkit-text-stroke: .001px black;
-    text-stroke: .001px black;
 }
 
 /* ===== NOTE TEXT ===== */
@@ -82,7 +102,7 @@ p span {
 
 /* ===== RESPNSIVE ===== */
 @media screen and (max-width: 992px) {
-    h1 {
+    h1,h2 {
         font-size: .8rem;
     }
 
