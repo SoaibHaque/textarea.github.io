@@ -61,7 +61,7 @@ input[type=number] {
 }
 
 button {
-    letter-spacing = 3px;
+    letter-spacing: 3px;
     font-weight: 100;
     color: white;
     user-select: none;
