@@ -48,6 +48,8 @@ button {
 
 input {
     flex: 2;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 input::-webkit-outer-spin-button,
