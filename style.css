@@ -10,7 +10,7 @@ body {
     text-align: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
-    letter-spacing = 3px;
+    letter-spacing: 3px;
 }
 
 /* ===== FORM ===== */
@@ -43,7 +43,7 @@ button {
     outline: none;
     background: none;
     padding: 1rem 2rem;
-    font-family = 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 input {
