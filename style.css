@@ -47,7 +47,7 @@ button {
 }
 
 input[list=country] {
-    width: 1em;
+    width: 2em;
     color: white;
     background: rgb(243, 46, 73);
 }
@@ -132,6 +132,6 @@ p span {
     }
 
     input {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
 }
