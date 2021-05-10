@@ -134,4 +134,7 @@ p span {
     input {
         font-size: 0.5rem;
     }
+    input[list=country] {
+        width: 1em;
+    }
 }
