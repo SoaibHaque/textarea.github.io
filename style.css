@@ -54,7 +54,7 @@ button {
     border: 2px solid transparent;
     outline: none;
     background: none;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     font-family: 'Poppins', sans-serif;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, .3);
 }
