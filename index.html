@@ -15,12 +15,17 @@
     <h1> <span>WhatsApp</span> Send without save</h1>
 
     <!-- ===== FORM ===== -->
-    <form action="http://api.whatsapp.com/send">
-        <input type="number" inputmode="tel" id="number"
-            onfocus=" let value = this.value; this.value = null; this.value=value" name="phone" value="91"
-            placeholder="Type your Number" autocomplete="off">
+    <div>
+        <input type="number" list="country" value="91">
+        <datalist id="country">
+            <option value="91">91</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+            <option value="1">1</option>
+        </datalist>
+        <input type="number" inputmode="tel" id="number" placeholder="Type your Number" autocomplete="off">
         <button>SEND</button>
-    </form>
+    </div>
 
     <!-- ===== NOTE TEXT ===== -->
     <p>(use <span>ENTER</span> to send)</p>
@@ -34,7 +39,29 @@
 
 <!-- ===== JAVASCRIPT ===== -->
 <script type="text/javascript">
-    document.getElementById("number").focus();
+    Selector = e => document.querySelector(e);
+    Selector("#number").focus();
+    setInterval(() => {
+        if (Selector("input[list='country']").value == "") {
+            Selector("datalist").id = "";
+        } else {
+            Selector("datalist").id = "country";
+        }
+    }, 10)
+    Selector("button").addEventListener("click", () => {
+        var countryCode = Selector("input[list='country']").value;
+        var number = Selector("#number").value;
+        var url = "http://api.whatsapp.com/send?phone=" + countryCode + number;
+        window.open(url,'_blank');
+    })
+    document.addEventListener("keydown", (r) => {
+        if (r.keyCode == 13) {
+            var countryCode = Selector("input[list='country']").value;
+            var number = Selector("#number").value;
+            var url = "http://api.whatsapp.com/send?phone=" + countryCode + number;
+            window.open(url,'_blank');
+        }
+    })
 </script>
 
 </html>
