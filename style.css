@@ -3,14 +3,22 @@
     margin: 0;
     padding: 0;
     transition: all .3s ease;
+    user-select: none;
 }
 
 body {
-    background: rgb(252, 191, 191);
     text-align: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 3px;
+    color: white;
+}
+
+section {
+    background: linear-gradient(45deg, #4aa96c, #9fe6a0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 /* ===== FORM ===== */
@@ -22,8 +30,6 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fffffff2;
-    box-shadow: 2px 3px 8px rgba(0, 0, 0, .3);
 }
 
 h2 {
@@ -37,27 +43,44 @@ a {
     top: 80%;
 }
 
+input[inputmode="tel"] {
+    background: white;
+}
+
 input,
 button {
     border: 2px solid transparent;
     outline: none;
     background: none;
-    padding: 1rem 2rem;
+    padding: 0.6rem 2rem;
     font-family: 'Poppins', sans-serif;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, .3);
+}
+
+button#send {
+    margin-left: 1rem;
+    padding: 0 3rem;
+}
+
+button#download {
+    padding: 1rem 2rem;
 }
 
 input[list=country] {
     width: 2em;
     color: white;
-    background: rgb(243, 46, 73);
+    background: #f55c47;
+    margin-right: 1rem;
 }
+
 /* Hide the list on focus of the input field */
 datalist {
-	display: none;
+    display: none;
 }
+
 /* specifically hide the arrow on focus */
 input::-webkit-calendar-picker-indicator {
-	display: none;
+    display: none;
 }
 
 input {
@@ -83,15 +106,15 @@ button {
     user-select: none;
     -moz-user-select: none;
     flex: 1;
-    background: rgb(243, 46, 73);
+    background: #f55c47;
     font-weight: bold;
     cursor: pointer;
 }
 
 button:hover {
-    border: 2px solid rgb(243, 46, 73);
-    background-color: rgb(252, 191, 191);
-    color: rgb(243, 46, 73);
+    border: 2px solid #f55c47;
+    background-color: #9fe6a0;
+    color: #f55c47;
 }
 
 h1 {
@@ -101,10 +124,9 @@ h1 {
 }
 
 h1 span {
-    color: rgb(50, 190, 50);
+    color: rgb(235, 255, 56);
     font-size: 3rem;
     font-weight: bold;
-    -webkit-text-stroke: .001px black;
 }
 
 /* ===== NOTE TEXT ===== */
@@ -115,7 +137,7 @@ p {
 }
 
 p span {
-    color: red;
+    color: #f55c47;
     font-weight: bolder;
 }
 
@@ -134,7 +156,12 @@ p span {
     input {
         font-size: 0.5rem;
     }
+
     input[list=country] {
         width: 1em;
+    }
+
+    button {
+        font-size: 0.5rem;
     }
 }
